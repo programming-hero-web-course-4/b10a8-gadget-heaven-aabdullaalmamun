@@ -17,7 +17,7 @@ const Statistics = () => {
 
   useEffect(() => {
     const fetchProducts = async () => {
-      const data = await fetch("../../../public/products.json").then((res) =>
+      const data = await fetch("/products.json").then((res) =>
         res.json()
       );
       setProducts(data);

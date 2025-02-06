@@ -11,7 +11,7 @@ const HomeExplore = () => {
 
   useEffect(() => {
     const fetchProducts = async () => {
-      const data = await fetch("../../../public/products.json").then((res) =>
+      const data = await fetch("/products.json").then((res) =>
         res.json()
       );
       setProducts(data);
@@ -50,7 +50,7 @@ const HomeExplore = () => {
   };
 
   return (
-    <div className="max-w-7xl mx-auto mt-25 lg:mt-0 px-4">
+    <div className="max-w-7xl mx-auto md:mt-0 lg:mt-0 px-4">
       <h2 className="text-4xl font-bold text-center mb-6">
         Explore cutting-Edge Gadgets
       </h2>

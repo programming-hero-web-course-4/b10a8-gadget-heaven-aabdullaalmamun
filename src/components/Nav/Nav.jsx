@@ -63,6 +63,21 @@ const Nav = () => {
           >
             Dashboard
           </NavLink>
+          {/* add review here */}
+          <NavLink
+            className={({ isActive }) =>
+              isActive ? "bg-purple-400 text-white px-3 rounded-2xl" : ""
+            }
+            to="/review"
+            onClick={() => setIsOpen(false)}
+          >
+            Review
+          </NavLink>
+
+
+          {/*  */}
+
+
         </div>
       </div>
 

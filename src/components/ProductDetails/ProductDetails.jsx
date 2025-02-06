@@ -58,7 +58,7 @@ const ProductDetails = () => {
         </p>
       </div>
 
-      <div className="max-w-7xl mx-auto py-10 px-4 bg-white rounded-4xl relative bottom-30">
+      <div className="max-w-7xl mx-auto pt-3 px-4 bg-white rounded-4xl relative bottom-30">
         <div className="grid md:grid-cols-2 gap-8">
           <img
             src={product.product_image}
@@ -66,9 +66,9 @@ const ProductDetails = () => {
             className="w-full h-96 object-contain rounded-lg"
           />
           <div>
-            <h1 className="text-4xl font-bold mb-4">{product.product_title}</h1>
-            <p className="text-2xl text-purple-600 mb-4">{product.price} $</p>
-            <p className="text-gray-600 mb-6">{product.description}</p>
+            <h1 className="text-4xl font-bold ">{product.product_title}</h1>
+            <p className="text-2xl text-purple-600 ">{product.price} $</p>
+            <p className="text-gray-600 mb-3">{product.description}</p>
 
             {/* Specifications */}
             <div>
@@ -82,7 +82,7 @@ const ProductDetails = () => {
               </ul>
             </div>
             {/* Rating Stars */}
-            <div className="flex items-center mb-3">
+            <div className="flex items-center mb-2">
               <h2 className="text-xl font-semibold mr-4">Rating:</h2>
               <Rating
                 count={5}
